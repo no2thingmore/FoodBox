@@ -1,0 +1,47 @@
+#image-box {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+#product_name{
+    font-size: 26px;
+}
+#product_info{
+    width: 100%;    
+    text-align: left;
+    border-bottom: 3px solid black;
+}
+
+#material{
+    width: 100%;
+}
+#material_head{
+    font-size: 26px;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#material_inner{
+    margin-left: 30px;
+    line-height: 50px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
