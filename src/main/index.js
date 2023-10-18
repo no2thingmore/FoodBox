@@ -5,17 +5,10 @@ import axios from 'axios';
 import useAsync from '../customHook/useAsync';
 import MainProduct from './MainProduct';
 import { API_URL } from '../config/contansts'
-<<<<<<< HEAD
 import { Carousel } from 'antd'; // 이미지 슬라이더
 
 async function getProducts() {
 // 상품 정보를 가져오는 비동기 함수, API에서 상품 데이터를 가져옴
-=======
-import { Carousel } from 'antd';
-
-// 비동기
-async function getProducts() {
->>>>>>> 3a8cdcfc38b03ee5a52f376341a671136759aa9c
     const response = await axios.get(`${API_URL}/products`);
     return response.data;
 }
@@ -30,11 +23,7 @@ const contentStyle = {
 };
 const MainPage = (props) => {
     
-<<<<<<< HEAD
     const [state ] = useAsync(getProducts, []) // useAsync 훅을 사용하여 상품 데이터 가져옴
-=======
-    const [state ] = useAsync(getProducts, [])
->>>>>>> 3a8cdcfc38b03ee5a52f376341a671136759aa9c
     const { loading, data:products, error} = state;
     if(loading) return <div>로딩중 ......</div>
     if(error) return <div>에러가 발생했습니다.</div>
@@ -63,14 +52,13 @@ const MainPage = (props) => {
     // carousel
     const onChange = (currentSlide) => {
         console.log(currentSlide);
-      };
+    };
     return (
         <div>
             <div id="main">
                     <div id="banner">
                     <Carousel afterChange={onChange} autoplay>
                     <div>
-<<<<<<< HEAD
                         <img src="images/banners/banner1.jpg" alt="" /> {/* 배너 1번 */}
                         <h3 style={contentStyle}>&nbsp;</h3>
                     </div>
@@ -81,18 +69,6 @@ const MainPage = (props) => {
                     <div>
                         <img src="images/banners/banner3.jpg" alt="" /> {/* 배너 3번 */}
                         <h3 style={contentStyle}>&nbsp;</h3>
-=======
-                        <img src="images/banners/banner1.png" alt="" />
-                        <h3 style={contentStyle}>1</h3>
-                    </div>
-                    <div>
-                        <img src="images/banners/banner1.png" alt="" />
-                        <h3 style={contentStyle}>2</h3>
-                    </div>
-                    <div>
-                        <img src="images/banners/banner1.png" alt="" />
-                        <h3 style={contentStyle}>3</h3>
->>>>>>> 3a8cdcfc38b03ee5a52f376341a671136759aa9c
                     </div>
                     </Carousel>
                 </div>
