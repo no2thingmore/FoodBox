@@ -5,10 +5,13 @@ import { useParams } from 'react-router-dom';
 import useAsync from '../customHook/useAsync'
 import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../config/contansts'
+<<<<<<< HEAD
 import step1 from './step1.png';
 import step2 from './step2.png';
 import step3 from './step3.png';
 import step4 from './step4.png';
+=======
+>>>>>>> 3a8cdcfc38b03ee5a52f376341a671136759aa9c
 
 
 async function getProduct(id) {
@@ -100,6 +103,7 @@ const ProductPage = (props) => {
                     <div id="material_head">
                         <li>레시피</li>
                     </div>
+<<<<<<< HEAD
                     <div id="recepit">
                         <li>1. 빵을 굽다</li>
                         <img src={step1} className="step"alt=''/>
@@ -109,10 +113,17 @@ const ProductPage = (props) => {
                         <img src={step3} className="step" alt=''/>
                         <li>4. 야미</li>
                         <img src={step4} className="step" alt=''/>
+=======
+                    <div id="material_inner">
+                        <li>1. 빵을 굽다</li>
+                        <li>2. 햄과 치즈를 넣다</li>
+                        <li>3. 원하는 추가재료를 넣다</li>
+>>>>>>> 3a8cdcfc38b03ee5a52f376341a671136759aa9c
                     </div>
                 </section>
             </div>
             <div id="recommand">
+<<<<<<< HEAD
                 <div className="card">
                     <img src="" alt="" />
                     <div class="container">
@@ -146,6 +157,13 @@ const ProductPage = (props) => {
                     <div class="container">
                         <h4><b>추천5</b></h4>
                         <p>1234</p>
+=======
+                <div class="card">
+                    <img src="img_avatar.png" alt="Avatar" />
+                    <div class="container">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+>>>>>>> 3a8cdcfc38b03ee5a52f376341a671136759aa9c
                     </div>
                 </div>
             </div>  
