@@ -6,20 +6,22 @@ const Login = () => {
     <div className="container login">
       <form className="login">
         <h1>Login</h1>
-        <span className="field">ID</span>
-        <input type="email" placeholder="아이디를 입력하세요" />{" "}
+        <span className="field">아이디</span>
+        <input type="email" placeholder="ID" />
         {/* 아이디 입력창 */}
-        <span className="field">PW</span>
-        <input type="password" placeholder="비밀번호를 입력하세요" />{" "}
+        <span className="field">비밀번호</span>
+        <input type="password" placeholder="Password" />
         {/* 비밀번호 입력창 */}
+
+        <input type="button" value="로그인" className="LoginBtn"/>
         <div className="save-info">
           <label>
-            <input type="checkbox" id="save-email" />{" "}
-            {/* 자동 로그인 체크박스 */}
-            <em></em>자동 로그인
+            <input type="checkbox" className="check" />
           </label>
+          <div className="auto_login">
+            자동 로그인
+          </div>
         </div>
-        <input type="button" value="로그인" />
         <div className="sns-info">
           또는
           <div className="sns">

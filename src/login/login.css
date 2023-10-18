@@ -1,3 +1,7 @@
+.App {
+  background-color: #e0e0e0;
+}
+
 .container.login {
   width: 450px;
   display: flex;
@@ -6,17 +10,22 @@
   height: 100vh;
   width: 450px;
   margin: 0 auto;
-  background-color: #f7f7f7;
 }
 
 form.login {
   width: 100%;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4%;
 }
-
+.LoginBtn {
+  margin: 7px 0px;
+}
 .field {
+  float: left;
+  position: relative;
+  left: 5px;
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
@@ -32,7 +41,23 @@ input[type="password"] {
 }
 
 .save-info {
-  margin-bottom: 10px;
+  padding: 7px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.save-info label {
+  display: flex;
+  align-items: center;
+}
+
+.save-info em {
+  margin-left: 5px;
+}
+
+.auto_login {
+  position: relative;
+  left: 5px;
 }
 
 input[type="button"] {
@@ -46,8 +71,8 @@ input[type="button"] {
 }
 
 .sns-info {
-  margin-top: 20px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .signup-info ul {
